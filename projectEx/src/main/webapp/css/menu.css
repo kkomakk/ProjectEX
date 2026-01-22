@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/*top Menu*/
+#topMenuBox{
+	float:right;
+	font-weight:bold;
+	padding-right:10px;
+}
+
+/*main Menu*/
+#mainMenuBox{
+	width:1280px;
+	height:35px;
+	line-height:35px;
+	background:#ffffff;
+	z-index:10; /* 메인페이지 스크롤 시 위에 오도록*/
+	/*메뉴 위 아래 구분 위해*/
+	border-top:solid #CCC 1px;
+	border-bottom:solid #CCC 1px;
+}
+
+#mainMenuBox ul{
+	margin:0;
+	padding:0;
+	list-style:None;
+}
+
+#mainMenuBox li{
+	float: left;
+	text-align:center;
+	width:16%;
+	height:30px;
+}
+
+#mainMenuBox ul li:first-child {/*첫번째*/
+	width:19%;
+	border:solid 3px black;
+}
+
+#mainMenuBox li a{
+	text-decoration:None;
+	color:black;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#mainMenuBox li a:hover{
+	color:red;
+}
+
+/*subMenu*/
+
+#subMenuBox{
+	width:1280px;
+	height:160px;
+	background:white;
+	text-align:center;
+	z-index:10;/*슬라이드 쇼 박스 위에 드롭다운 되도록*/
+	padding-bottom:0;/*메뉴 밑쪽에 내부 공간 0*/
+	position:absolute;
+	visibility:hidden;/*시작시 서브메뉴 항목 숨김*/
+}
+
+#subMenuBox ul{
+	margin:0;
+	padding:0;
+	list-style:None;
+}
+
+.subMenuItem{
+	width:15%;
+	background:white;
+	border-left:solid #CCC 1px;
+	border-right:solid #CCC 1px;
+}
+
+/*width:15%로 정해놨기 때문에 5+15+15+15+15+15...*/
+#subMenuItem1{
+	position:absolute;
+	margin-left:5%;
+}
+
+#subMenuItem2{
+	position:absolute;
+	margin-left:20%;
+}
+
+#subMenuItem3{
+	position:absolute;
+	margin-left:35%;
+}
+
+#subMenuItem4{
+	position:absolute;
+	margin-left:50%;
+}
+
+#subMenuItem5{
+	position:absolute;
+	margin-left:65%;
+}
+
+#subMenuItem6{
+	position:absolute;
+	margin-left:80%;
+}
+
+.subMenuItem li a{
+	color:#333333;
+	text-decoration:None;
+}
+
+.subMenuItem li a.hover{
+	text-decoration:underline;
+	color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

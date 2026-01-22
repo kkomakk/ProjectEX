@@ -1,0 +1,53 @@
+@charset "UTF-8";
+#tabMenuBox{
+	width:80%;
+	height:580px;
+	background:white;
+	padding:40px;
+	text-align:center;
+}
+
+#tabMenu ul{height:30px; padding:0;}
+#tabMenu ul li{
+	float:left;
+	list-style:None;
+	width:25%;
+	padding:0;
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+	margin-top:0px;
+}
+
+/*tab 메뉴에 올렸을 때 커서 변경*/
+#tabMenu img:hover {cursor:pointer;}
+
+/*탭 메뉴 선택시 진행할 js에서 사용, 동적으로 적용할 클래스*/
+.selectedItem Img {margin-top:32px;}
+
+/*탭컨텐츠*/
+
+#tabContent{
+	width:100%;
+	height:550px;
+	margin-top:20px;
+	border-top:solid 1px #cccccc;
+	border-bottom:solid 1px #cccccc;
+}
+/*tab 컨텐츠 모든 이미지 숨김*/
+#tabContent div{
+	display:None;
+	padding:0;
+	margin-top:20px;
+}
+
+/*탭 컨텐츠 첫 이미지 표현 */
+#tabContent div:first-child{display:block;}
+
+#tabContent img{width:90%; border:solid 1px #cccccc;}
+
+
+
+
+
+
